@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AACA,GACE,iBACF,CAEA,MACE,UAAW,CACX,eAAgB,CAChB,eAAgB,CAChB,kBACF","file":"main.81dd36ef.chunk.css","sourcesContent":["\nh1{\n  text-align: center;\n}\n\ninput{\n  width: 100%;\n  font-size: 1.2em;\n  margin-top: 20px;\n  margin-bottom: 15px;\n}\n\n  "]}
