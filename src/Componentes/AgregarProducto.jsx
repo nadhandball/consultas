@@ -6,7 +6,7 @@ import { PropTypes } from  'prop-types';
 function AgregarProducto({setCategorias}) {
 
 
-    const [input, setInput] = useState('Ingrese un nuevo producto');
+    const [input, setInput] = useState();
 
     const handleChange = (e) => {
         setInput(e.target.value);
@@ -21,25 +21,22 @@ function AgregarProducto({setCategorias}) {
             setCategorias(input);
             console.log(input);
             setInput('');
-
-        }
-        
-
+        }       
     }
 
     return(
         <div>
 
-        <hr></hr>
-        <h1>Agregar Productos</h1>
+            <hr></hr>
+            <h1>Agregar Productos</h1>
 
-        <form onSubmit={handleSubmit} >
-         <input 
-            type="text" 
-            value= {input}
-            onChange={handleChange} 
-         />
-        </form>
+            <form onSubmit={handleSubmit} >
+                 <input 
+                      type="text" 
+                      value= {input}
+                      onChange={handleChange} 
+                 />
+            </form>
         <div className="row justify-content-center">
         <button 
              //onClick={handleAgregar} 
